@@ -25,3 +25,10 @@ Client runs on `http://localhost:5173`
 - Message history persisted in MongoDB
 - Typing indicator using Socket.io
 
+
+## Installation
+```bash
+npm install
+cp .env.example .env
+npm run dev
+```
