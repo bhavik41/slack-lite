@@ -32,3 +32,9 @@ npm install
 cp .env.example .env
 npm run dev
 ```
+
+## API
+- `POST /api/auth/register` — create account
+- `POST /api/auth/login` — login
+- `GET /api/channels` — list channels
+- `POST /api/messages` — send message
