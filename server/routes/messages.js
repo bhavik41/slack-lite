@@ -7,3 +7,8 @@ router.post("/", async (req, res) => {
   res.status(201).json({ message: "sent" });
 });
 export default router;
+
+// Pagination helper
+function paginate(query, page = 1, limit = 50) {
+  return query.skip((page - 1) * limit).limit(limit);
+}
