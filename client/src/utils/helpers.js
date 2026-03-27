@@ -8,3 +8,7 @@ export function formatTime(date) {
 export function truncate(str, n = 50) {
   return str.length > n ? str.slice(0, n) + "…" : str;
 }
+
+export function sanitise(str) {
+  return str.replace(/</g, "&lt;").replace(/>/g, "&gt;");
+}
