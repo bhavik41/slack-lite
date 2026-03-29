@@ -10,3 +10,8 @@
   --success: #2eb67d;
   --danger: #e01e5a;
 }
+
+.channel-item.active {
+  background: var(--accent);
+  border-radius: 4px;
+}
