@@ -76,8 +76,15 @@ export default function ThreadPanel({
     const text = draft.trim();
     if (!text && !uploading) return;
 
+    let room;
+    if (parentMessage.roomType === 'group') {
+      room = { type: 'group', groupId: parentMessage.roomId.replace('group:', '') };
+    } else {
+      room = { type: 'dm', participants: parentMessage.roomId.replace('dm:', '').split(':') };
+    }
+
     socket.emit('message:send', {
-      room: { type: parentMessage.roomType, groupId: parentMessage.roomId.replace('group:', '').replace('dm:', '') },
+      room,
       content: text,
       parentMessageId: parentMessage._id,
     });
