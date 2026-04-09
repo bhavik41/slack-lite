@@ -12,3 +12,5 @@ export function truncate(str, n = 50) {
 export function sanitise(str) {
   return str.replace(/</g, "&lt;").replace(/>/g, "&gt;");
 }
+
+// reactions: [{ emoji, users[] }]
