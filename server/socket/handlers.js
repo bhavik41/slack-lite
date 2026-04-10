@@ -7,3 +7,5 @@ export function registerHandlers(io, socket) {
     socket.to(channelId).emit("user:stopped_typing", { userId });
   });
 }
+
+// TODO: move channel join/leave here
