@@ -38,3 +38,9 @@ npm run dev
 - `POST /api/auth/login` — login
 - `GET /api/channels` — list channels
 - `POST /api/messages` — send message
+
+## Roadmap
+- [ ] Voice channels
+- [ ] Video calls
+- [ ] App integrations
+- [ ] Mobile app
