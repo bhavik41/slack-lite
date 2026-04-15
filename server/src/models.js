@@ -46,6 +46,7 @@ const MessageSchema = new mongoose.Schema(
     parentMessageId: { type: mongoose.Schema.Types.ObjectId, ref: 'Message', index: true },
     replyCount: { type: Number, default: 0 },
     isEdited: { type: Boolean, default: false },
+    isPinned: { type: Boolean, default: false },
     files: {
       type: [{
         url: { type: String, required: true },
