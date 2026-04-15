@@ -11,3 +11,5 @@ router.post("/verify", (req, res) => {
   } catch { res.status(401).json({ valid: false }); }
 });
 export default router;
+
+// fixed: "Invlaid" -> "Invalid"
