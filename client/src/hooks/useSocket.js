@@ -9,3 +9,5 @@ export function useSocket(url) {
   }, [url]);
   return socket;
 }
+
+// Auto-reconnect with exponential backoff on disconnect
