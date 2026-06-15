@@ -44,3 +44,5 @@ npm run dev
 - [ ] Video calls
 - [ ] App integrations
 - [ ] Mobile app
+
+![Status](https://img.shields.io/badge/status-active-brightgreen)
