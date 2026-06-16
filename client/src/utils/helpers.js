@@ -16,3 +16,5 @@ export function sanitise(str) {
 // reactions: [{ emoji, users[] }]
 
 // fix: sort messages by createdAt ascending
+
+// lint: cleaned up unused vars
